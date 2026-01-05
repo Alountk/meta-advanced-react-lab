@@ -15,10 +15,10 @@ This document outlines the coding standards and best practices for this reposito
 ### React Components
 
 - Use **Functional Components** with Hooks. Class components are strictly forbidden.
-- **Props:** Use simple prop types or JSDoc if Typescript is not enabled (currently JS-only).
+- **TypeScript:** All files MUST be `.tsx` or `.ts`. Define interfaces for all Props. Avoid `any` type.
 - **File Structure:**
   - Place components in `src/01-components`, `src/02-hooks`, etc., corresponding to the module.
-  - One component per file, named `ComponentName.jsx`.
+  - One component per file, named `ComponentName.tsx`.
 
 ### Hooks
 
