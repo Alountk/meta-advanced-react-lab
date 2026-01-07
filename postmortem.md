@@ -33,6 +33,11 @@ The project was successfully migrated from JavaScript/React 18 to TypeScript/Rea
 - **Issue:** `npm install` showed peer dependency warnings for React 19 vs 18 libraries.
 - **Resolution:** This is expected when upgrading to a Release Candidate or very new major version of React. Most libraries will update soon. The application runs correctly despite warnings.
 
+### 4. Vite Config Type Mismatch
+- **Issue:** TypeScript error "No overload matches this call" in `vite.config.ts` because the `test` property is unknown to `vite`'s `defineConfig`.
+- **Error:** `Object literal may only specify known properties, and 'test' does not exist in type 'UserConfigExport'.`
+- **Fix:** Switched import from `vite` to `vitest/config` to access the extended configuration types that include Vitest options.
+
 ## Future Recommendations
 - Ensure all new components are written in `.tsx`.
 - define explicit types for Props instead of `any`.
