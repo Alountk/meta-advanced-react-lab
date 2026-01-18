@@ -62,7 +62,7 @@ In this module, you will be assessed on key skills covered in the course and cre
 
 ### Module 1: Components
 - [ ] Summarize React and different professional paths
-- [ ] Render and transform lists with keys
+- [x] Render and transform lists with keys
 - [ ] Distinguish between controlled and uncontrolled components
 - [ ] Create a controlled form component
 - [ ] Lift state up to the nearest common ancestor
