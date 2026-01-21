@@ -1,5 +1,4 @@
 import "./index.css";
-import DessertsList from "./DessertsList";
 
 const desserts = [
   {
