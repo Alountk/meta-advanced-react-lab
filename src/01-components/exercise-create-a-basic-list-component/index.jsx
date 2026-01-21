@@ -1,5 +1,3 @@
-import "./index.css";
-
 const desserts = [
   {
     name: "Chocolate Cake",
@@ -41,7 +39,7 @@ function DessertsList({ data }) {
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h2>List of low calorie desserts:</h2>
       <DessertsList data={desserts} />
     </div>
